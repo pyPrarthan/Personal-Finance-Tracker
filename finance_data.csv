@@ -1,3 +1,11 @@
 date,amount,category,description
-25-08-2024,123.45,Income,Salary
-26-08-2024,125.0,Income,Side Gig
+27-08-2024,75.00,Expense,Groceries
+28-08-2024,150.00,Income,Freelance Work
+29-08-2024,60.00,Expense,Utilities
+30-08-2024,90.00,Expense,Dining Out
+31-08-2024,200.00,Income,Bonus
+01-09-2024,30.00,Expense,Transport
+02-09-2024,500.00,Income,Project Payment
+03-09-2024,25.00,Expense,Coffee
+04-09-2024,40.00,Expense,Entertainment
+05-09-2024,100.00,Income,Gift

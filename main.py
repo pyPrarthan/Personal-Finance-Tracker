@@ -1,9 +1,8 @@
 import pandas as pd
 import csv
 from datetime import datetime
-
 from data_entry import get_amount, get_category, get_date, get_description
-
+import matplotlib.pyplot as plt
 class CSV:
     CSV_FILE = "finance_data.csv"
     COLUMNS = ["date", "amount", "category","description"]
@@ -67,4 +66,45 @@ def add():
     CSV.add_entry(date, amount, category, description)
 
 
-CSV.get_transaction("01-01-2023", "30-08-2024")
+def plot_transaction(df):
+    df.set_index('date', inplace = True)
+
+    income_df = df[df['category'] == 'Income'].resample("D").sum().reindex(df.index, fill_value=0)
+    expense_df = df[df['category'] == 'Expense'].resample("D").sum().reindex(df.index, fill_value=0)
+
+    # Plotting the Graph!
+    plt.figure(figsize=(10, 5))
+    plt.plot(income_df.index, income_df["amount"], label = "Income", color="g")
+    plt.plot(expense_df.index, expense_df["amount"], label = "Expense", color = "r")
+    plt.xlabel("Date")
+    plt.ylabel("Amount")
+    plt.title("Income & Expenses over time")
+    plt.legend()
+    plt.grid(True)
+    plt.show()
+    
+
+def main():
+    while True: 
+        print("\n1. Add new transation")
+        print("2. View transactions and summary within a date range")
+        print("3. Exit")
+        choice = input("Enter your choice: ")
+
+        if choice == "1":
+            add()
+        elif choice == "2": 
+            start_date = get_date("Enter the start date (dd-mm-yyy): ")
+            end_date = get_date("Enter the end date (dd-mm-yyy): ")
+            df = CSV.get_transaction(start_date, end_date)
+            if input("Do you want to see a plot (y/n): ").lower() == 'y':
+                plot_transaction(df)
+        elif choice == "3":
+            print("Exiting...")
+            break
+        else:
+            print("Invalid choice. Please choose 1, 2 or 3.")
+
+
+if __name__ == "__main__":
+    main()
