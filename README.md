@@ -22,16 +22,6 @@ This Python project, inspired by [this YouTube video](https://www.youtube.com/wa
 3. **View Transactions**: Choose the option to view transactions and specify the date range. View a summary of your financial activity.
 4. **Plot Data**: Optionally, generate a plot to visualize your financial data over time.
 
-## 📊 Example Usage
-
-```python
-# To add a new transaction
-CSV.add_entry("26-08-2024", 150.00, "Income", "Freelance Work")
-
-# To view and summarize transactions within a date range
-CSV.get_transaction("01-08-2024", "31-08-2024")
-```python
-
 ## 📈 Visualization
 
 The project includes basic data visualization. Use the plot feature to see your income and expenses over time. This helps you gain insights into your financial trends and patterns.
@@ -40,3 +30,12 @@ The project includes basic data visualization. Use the plot feature to see your 
 - Python
 - Pandas
 - Matplotlib
+
+## 📊 Example Usage
+
+```python
+# To add a new transaction
+CSV.add_entry("26-08-2024", 150.00, "Income", "Freelance Work")
+
+# To view and summarize transactions within a date range
+CSV.get_transaction("01-08-2024", "31-08-2024")
