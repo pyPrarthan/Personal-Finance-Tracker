@@ -30,7 +30,7 @@ CSV.add_entry("26-08-2024", 150.00, "Income", "Freelance Work")
 
 # To view and summarize transactions within a date range
 CSV.get_transaction("01-08-2024", "31-08-2024")
-
+```python
 
 ## 📈 Visualization
 
