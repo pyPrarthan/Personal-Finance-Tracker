@@ -3,7 +3,7 @@ from datetime import date, datetime
 date_format = "%d-%m-%Y"
 CATEGORIES = {"I": "Income", "E": "Expense"}
 
-def get_date(prompt, allow_default='False'):
+def get_date(prompt, allow_default=False):
     date_str = input(prompt)
     if allow_default and not date_str:
         return datetime.today().strftime(date_format)
