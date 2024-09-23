@@ -1,8 +1,10 @@
+from urllib import response
 import pandas as pd
 import csv
 from datetime import datetime
 from data_entry import get_amount, get_category, get_date, get_description
 import matplotlib.pyplot as plt
+
 class CSV:
     CSV_FILE = "finance_data.csv"
     COLUMNS = ["date", "amount", "category","description"]
@@ -21,6 +23,7 @@ class CSV:
         # Storing the new entry into a Dictonary!
         new_entry = {
             "date" : date,
+
             "amount" : amount,
             "category" : category,
             "description" : description
