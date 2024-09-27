@@ -91,7 +91,8 @@ def main():
     while True: 
         print("\n1. Add new transation")
         print("2. View transactions and summary within a date range")
-        print("3. Exit")
+        print("3. Chat with FinBot for advice")
+        print("4. Exit")
         choice = input("Enter your choice: ")
 
         if choice == "1":
@@ -103,8 +104,10 @@ def main():
             if input("Do you want to see a plot (y/n): ").lower() == 'y':
                 plot_transaction(df)
         elif choice == "3":
-            print("Exiting...")
+            print("Chat with FinBot: ")
             break
+        elif choice == "4":
+            print("Exiting...")
         else:
             print("Invalid choice. Please choose 1, 2 or 3.")
 
