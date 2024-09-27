@@ -5,6 +5,8 @@ from datetime import datetime
 from data_entry import get_amount, get_category, get_date, get_description
 import matplotlib.pyplot as plt
 
+from finBot import talk_with_chatbot
+
 class CSV:
     CSV_FILE = "finance_data.csv"
     COLUMNS = ["date", "amount", "category","description"]
@@ -104,10 +106,10 @@ def main():
             if input("Do you want to see a plot (y/n): ").lower() == 'y':
                 plot_transaction(df)
         elif choice == "3":
-            print("Chat with FinBot: ")
-            break
+            talk_with_chatbot()
         elif choice == "4":
             print("Exiting...")
+            break
         else:
             print("Invalid choice. Please choose 1, 2 or 3.")
 
