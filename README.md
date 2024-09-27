@@ -7,6 +7,8 @@ This Python project, inspired by [this YouTube video](https://www.youtube.com/wa
 - `main.py`: The main script for running the finance tracker. Includes features for adding transactions, viewing summaries, and plotting data.
 - `data_entry.py`: Contains helper functions for input and validation, such as date, amount, category, and description.
 - `finance_data.csv`: CSV file where your financial transactions are stored. Automatically created if it doesn't exist.
+- `finBot.py`: Script that powers FinBot, an AI-driven chatbot that provides financial advice. It handles the interaction between the user and OpenAI's GPT model to answer questions related to budgeting, saving, and other finance-related queries.
+
 
 ## 🚀 Features
 
@@ -15,6 +17,13 @@ This Python project, inspired by [this YouTube video](https://www.youtube.com/wa
 3. **Summary**: Get a summary of total income, total expenses, and net savings.
 4. **Visualization**: Generate a plot to visualize income and expenses over time.
 5. **FinBot**: Chat with a Bot if you need any financial aid.
+
+## 🦾 FinBot Features:
+
+1. Financial Advice: Ask **FinBot** questions like **"How can I save more money?"** or **"What should I know about budgeting?"** for helpful insights.
+2. Interactive Chat: Chat with FinBot directly through the terminal to get quick financial tips.
+3. Seamless Integration: FinBot is integrated into the existing Personal Finance Tracker, making it a one-stop solution for managing and understanding your finances.
+4. Type 'exit' to return to main menu. 
 
 ## 🛠️ How to Use
 
@@ -33,8 +42,3 @@ The project includes basic data visualization. Use the plot feature to see your 
 - Pandas
 - Matplotlib
 
-## 🧠 FinBot Features:
-
-1. Financial Advice: Ask **FinBot** questions like **"How can I save more money?"** or **"What should I know about budgeting?"** for helpful insights.
-2. Interactive Chat: Chat with FinBot directly through the terminal to get quick financial tips.
-3. Seamless Integration: FinBot is integrated into the existing Personal Finance Tracker, making it a one-stop solution for managing and understanding your finances.
