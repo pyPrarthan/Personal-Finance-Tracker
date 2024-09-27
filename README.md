@@ -1,4 +1,4 @@
-# 💰 Personal Finance Tracker
+# 💰 Personal Finance Tracker with FinBot 🤖
 
 This Python project, inspired by [this YouTube video](https://www.youtube.com/watch?v=Dn1EjhcQk64), is designed to help you manage and track your personal finances. It allows you to record income and expenses, view transactions within a specific date range, and visualize your financial data with a simple plot.
 
@@ -14,6 +14,7 @@ This Python project, inspired by [this YouTube video](https://www.youtube.com/wa
 2. **View Transactions**: Filter and view transactions within a specified date range.
 3. **Summary**: Get a summary of total income, total expenses, and net savings.
 4. **Visualization**: Generate a plot to visualize income and expenses over time.
+5. **FinBot**: Chat with a Bot if you need any financial aid.
 
 ## 🛠️ How to Use
 
@@ -21,6 +22,7 @@ This Python project, inspired by [this YouTube video](https://www.youtube.com/wa
 2. **Add a Transaction**: Run the script and select the option to add a new transaction. Enter the required details such as date, amount, category, and description.
 3. **View Transactions**: Choose the option to view transactions and specify the date range. View a summary of your financial activity.
 4. **Plot Data**: Optionally, generate a plot to visualize your financial data over time.
+5. **Fin Bot**: You can simply ask the Bot questions which uses gpt-3.5-turbo model. 
 
 ## 📈 Visualization
 
@@ -31,11 +33,8 @@ The project includes basic data visualization. Use the plot feature to see your 
 - Pandas
 - Matplotlib
 
-## 📊 Example Usage
+## 🧠 FinBot Features:
 
-```python
-# To add a new transaction
-CSV.add_entry("26-08-2024", 150.00, "Income", "Freelance Work")
-
-# To view and summarize transactions within a date range
-CSV.get_transaction("01-08-2024", "31-08-2024")
+1. Financial Advice: Ask **FinBot** questions like **"How can I save more money?"** or **"What should I know about budgeting?"** for helpful insights.
+2. Interactive Chat: Chat with FinBot directly through the terminal to get quick financial tips.
+3. Seamless Integration: FinBot is integrated into the existing Personal Finance Tracker, making it a one-stop solution for managing and understanding your finances.
