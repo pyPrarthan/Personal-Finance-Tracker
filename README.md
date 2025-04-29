@@ -1,6 +1,6 @@
 # 💰 Personal Finance Tracker with FinBot 🤖
 
-This Python project, inspired by [this YouTube video](https://www.youtube.com/watch?v=Dn1EjhcQk64), is designed to help you manage and track your personal finances. It allows you to record income and expenses, view transactions within a specific date range, and visualize your financial data with a simple plot.
+This Python project, is designed to help you manage and track your personal finances. It allows you to record income and expenses, view transactions within a specific date range, and visualize your financial data with a simple plot.
 
 ## 📂 Project Structure
 
